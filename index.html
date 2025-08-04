@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plácido Junior - Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1>PJ</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#projects" class="nav-link">Projetos</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <span class="theme-text">Modo Escuro</span>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Plácido <span class="highlight">Junior</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        💻 Desenvolvedor Full Stack | Consultor em TI
+                    </p>
+                    <p class="hero-description">
+                        Transformando ideias em soluções digitais com React, Node.js e Python.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-secondary">Contato</a>
+                    </div>
+                </div>
+                <div class="hero-animation">
+                    <div class="constellation" id="constellation"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Sou Plácido, profissional de Tecnologia da Informação com foco em desenvolvimento web 
+                            e soluções tecnológicas inteligentes. Atualmente atuo no setor de engenharia da Absolut 
+                            Technologies, onde trabalho com elaboração de projetos técnicos e integração de 
+                            sistemas de áudio e vídeo.
+                        </p>
+                        <p>
+                            Tenho experiência prática com as seguintes tecnologias e também ofereço serviços de montagem 
+                            de setups, formatação, segurança digital e consultoria para pequenos negócios através 
+                            do meu projeto SetupSmart.
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <h3>Tecnologias</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">React</div>
+                            <div class="skill-item">Node.js</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">HTML/CSS</div>
+                            <div class="skill-item">Git</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Vamos conversar!</h3>
+                        <p>Estou sempre aberto a novas oportunidades e projetos interessantes.</p>
+                        <div class="contact-links">
+                            <a href="https://github.com/PlacidoFjr" class="contact-link" target="_blank">GitHub</a>
+                            <a href="mailto:placido@email.com" class="contact-link">Email</a>
+                            <a href="https://linkedin.com/in/placidojr" class="contact-link" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Plácido Junior. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
