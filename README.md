@@ -42,9 +42,7 @@ Portfólio profissional moderno e responsivo com modo claro/escuro.
 ## 📧 Contato
 
 - **GitHub**: [PlacidoFjr](https://github.com/PlacidoFjr)
-- **Email**: placido@email.com
+- **Email**: placidojunior34@email.com
 - **LinkedIn**: [placidojr](https://linkedin.com/in/placidojr)
 
----
-
-*Desenvolvido com ❤️ por Plácido Junior*
+--
